@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.font-primary {
+  font-family: "Epilogue", sans-serif;
+}
+
+.primary-button {
+  background: linear-gradient(
+    147.64deg,
+    rgb(235, 255, 55) -36.28%,
+    #ffbd15 67.42%,
+    #ffcd05 187.88%
+  );
+}
+
+.primary-button:hover {
+  transform: scale(1.05);
+  transition: ease 0.2s;
+}
+
+.footer-gridiant {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(222, 148, 0, 0) 100%
+  );
+}
+
+.box:after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(71deg, #0c0a0e, #dad54c, #0c0a0e);
+  content: "";
+  z-index: -1;
+  border-radius: 45px;
+}
+
+.box:hover:after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(71deg, #212115, #fff704, #16160e);
+  content: "";
+  z-index: -1;
+  border-radius: 45px;
+}
+
+.box {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #080905, #10100e, #000000);
+  background-clip: padding-box;
+  border-radius: 45px;
+}
+
+.footer {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #14160c, #10100e, #16130f);
+  background-clip: padding-box;
+  border-radius: 45px;
+}
+
+.bg-primary {
+  background: linear-gradient(71deg, #0c0a0e, #dad54c, #0c0a0e);
+}
+
+.sell {
+  background: -webkit-linear-gradient(rgb(240, 52, 52), rgb(131, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.buy {
+  background: -webkit-linear-gradient(rgb(58, 199, 29), rgb(59, 131, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  position: absolute;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d69c08;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0);
+}

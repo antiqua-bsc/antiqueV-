@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-black">
+
+    <!-- THIS IS HEADER -->
+    <header class=" fixed top-0 w-full bg-black z-40">
+        <div
+            class="xl:max-w-screen-2xl lg:max-w-screen-xl w-full mx-auto flex items-center justify-between lg:h-24 shadow-md md:h-24 h-20 px-8">
+            <div class="hidden lg:block">
+                <ul class="flex items-center text-white">
+                    <li><a href=""
+                            class="font-primary font-bold mr-5 hover:text-yellow-500 cursor-pointer">Tokenomics</a></li>
+                    <li><a href="" class="font-primary font-bold mr-5 hover:text-yellow-500 cursor-pointer">Roadmap</a>
+                    </li>
+                    <li><a href="" class="font-primary font-bold hover:text-yellow-500 cursor-pointer">vision</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="./assets/logo.png" alt="" class="lg:w-32 w-28 h-auto">
+            </div>
+            <div class="hidden lg:flex items-center">
+                <div class="flex items-center text-white mr-6">
+                    <div class="flex items-center p-1 rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
+                        <i class="ph-instagram-logo-fill text-2xl"></i>
+                    </div>
+                    <div class="p-1 flex items-center rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
+                        <i class="ph-twitter-logo-fill text-2xl"></i>
+                    </div>
+                    <div class="p-1 flex items-center rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
+                        <i class="ph-telegram-logo-fill text-2xl"></i>
+                    </div>
+                </div>
+                <div>
+                    <button
+                        class="font-primary primary-button px-4 py-2.5 rounded-lg font-semibold ">Marketplace</button>
+                </div>
+            </div>
+            <div class="md:hidden block">
+                <div id="mobile_header_trigger" class="p-1 rounded-lg">
+                    <i class="ph-list-bold text-3xl text-white"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE HEADER -->
+
+    <header id="mobile_header" class="hidden w-screen h-screen fixed flex flex-col top-0 left-0 bg-black px-8 z-50">
+        <div class="flex items-center justify-between h-20">
+            <img src="./assets/logo.png" alt="" class="w-28 h-auto">
+            <div id="mobile_header_close">
+                <i class="ph-x-bold text-3xl text-white"></i>
+            </div>
+        </div>
+        <div class="flex-grow flex items-center">
+            <div class="relative w-full">
+                <ul class="text-white">
+                    <li class="mb-8"><a href="" class="font-primary text-4xl font-bold mr-5">Tokenomics</a></li>
+                    <li class="mb-8"><a href="" class="font-primary text-4xl font-bold mr-5">Roadmap</a></li>
+                    <li class="mb-8"><a href="" class="font-primary text-4xl font-bold">vision</a></li>
+                </ul>
+                <div class="flex items-center text-white mr-6 my-20">
+                    <div class="box flex items-center p-1.5 rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
+                        <i class="ph-instagram-logo-fill text-2xl"></i>
+                    </div>
+                    <div class="box p-1.5 flex items-center rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
+                        <i class="ph-twitter-logo-fill text-2xl"></i>
+                    </div>
+                    <div
+                        class="box rounded-xl p-1.5 flex items-center rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
+                        <i class="ph-telegram-logo-fill text-2xl"></i>
+                    </div>
+                </div>
+                <button
+                    class="font-primary primary-button w-full px-4 py-2.5 rounded-lg font-semibold ">Marketplace</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- FIRST SECTION -->
+    <section class="w-full h-screen flex flex-col items-center justify-center bg-black px-8">
+        <div class="lg:max-w-screen-sm mx-auto w-full mb-10 mt-20">
+            <h3 class="lg:text-6xl md:text-5xl text-4xl font-bold font-primary mb-8 text-white text-center">Unlock the
+                ancient world Where
+                Ancient art
+                meets modern
+                technology.</h3>
+            <p class="text-lg font-light font-primary text-yellow-100 text-center">Lorem ipsum dolor sit amet
+                consectetur,
+                adipisicing elit.
+                Quae
+            </p>
+        </div>
+        <button class="text-lg font-primary primary-button px-8 py-2.5 rounded-lg font-semibold ">Join Presale</button>
+    </section>
+
+
+
+    <!-- SECOND SECTION -->
+    <section class="w-full bg-black py-24 px-8">
+        <div class="lg:max-w-screen-lg mx-auto">
+            <p class="lg:text-8xl md:text-6xl text-5xl font-bold font-primary text-white">Lorem ipsum, <span
+                    class="text-yellow-400">dolor sit
+                    amet consectetur</span>
+                adipisicing
+                elit.
+                Eveniet
+                cupiditate pariatur quos natus rem
+                quibusdam minima suscipit dicta recusandae <span class="text-yellow-400">dolor sit
+                    amet consectetur</span> nesciunt modi enim consectetur! Iusto
+                rerum
+                incidunt reprehe it?</p>
+        </div>
+    </section>
+
+    <!-- PARTNERS -->
+
+    <section class="lg:max-w-screen-xl mx-auto w-full px-12 h-64 w-11/12 mx-auto box mt-32 py-12">
+        <h4 class="lg:text-5xl md:text-4xl text-3xl font-primary font-bold text-white mb-8 text-center">Fetured by</h4>
+        <div class="flex justify-center items-center">
+
+        </div>
+    </section>
+
+
+
+    <!-- VISION -->
+    <section class="mt-32 w-full bg-black py-24 px-8">
+        <div class="lg:max-w-screen-xl w-full mx-auto">
+            <div class="flex md:flex-row flex-col">
+                <div class="md:w-5/12 w-full">
+                    <div class="bg-gradient-to-r from-yellow-500 w-16 h-3 rounded-md mb-12"></div>
+                    <h2 class="lg:text-6xl md:text-5xl text-4xl font-primary font-bold text-white mb-8">Our Vision</h2>
+                    <p class="text-lg font-primary font-semibold text-white text-gray-300">Lorem ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit.
+                        Exercitationem, in?</p>
+                </div>
+                <div class="md:w-7/12 md:pl-12 w-full">
+                    <p class="text-lg font-semibold font-primary text-gray-300 leading-loose mb-8">Lorem ipsum dolor sit
+                        amet
+                        consectetur
+                        adipisicing elit.
+                        Blanditiis iusto aperiam fuga unde est
+                        reiciendis temporibus libero, architecto veniam voluptatem natus eum suscipit eaque.
+                        Explicabo,uatur
+                        corrupti ullam
+                        repellendus, eveniet dolor voluptate? Ea architecto fuga nesciunt excepturi explicabo
+                        temporibus!
+                    </p>
+                    <p class="text-lg font-semibold font-primary text-gray-300 leading-loose">Lorem ipsum dolor sit amet
+                        que
+                        officiis vel molestias nostrum ut fugiat sequi,
+                        distinctio eos facere consequuntur ullam nobis dolorum accusamus inventore cum quas a quo,
+                        ducimus,
+                        minus placeat natus? Possimus, doloremque sed excepturi nesciunt sunt dicta quod sapiente neque?
+                        Dolorem, vero, excepturi unde fuga ut distinctio minus labore minima consequatur corrupti ullam
+                        repellendus, eveniet dolor voluptate? Ea architecto fuga nesciunt excepturi explicabo
+                        temporibus!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOKENOMICS -->
+    <section class="mt-44 mb-24 lg:max-w-screen-xl w-full mx-auto px-8 mx-auto">
+        <div class="mb-32">
+            <h1 class="lg:text-6xl md:text-5xl text-4xl text-white font-primary font-bold text-center mb-8">Tokenomics
+            </h1>
+            <p class="md:w-8/12 w-full mx-auto text-center text-lg font-primary text-light text-gray-200">Lorem
+                ipsum
+                dolor, sit
+                amet
+                consectetur
+                adipisicing
+                elit.
+                Dolor
+                veritatis obcaecati expedita ab tempora
+                temporibus incidunt, aperiam sit.</p>
+        </div>
+
+        <!-- <div class="md:w-2/3 w-full mx-auto flex flex-col md:flex-row justify-between mb-32 items-center">
+            <div class="flex justify-center items-center">
+                <div class="box flex mb-8 mr-8">
+                    <i class="lg:text-8xl md:text-7xl text-5xl ph-credit-card-fill sell p-6 px-8"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-primary font-bold text-4xl text-white mb-4">Sell</span>
+                    <span class="font-primary font-light text-xl text-white">14% Slippage</span>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="relative box mb-8 p-6 px-8 mr-8">
+                    <i class="lg:text-8xl md:text-7xl text-5xl ph-credit-card-fill buy"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-primary font-bold text-4xl text-white mb-4">Buy</span>
+                    <span class="font-primary font-light text-xl text-white">16% Slippage</span>
+                </div>
+            </div>
+        </div> -->
+
+        <img src="./assets/circles.png" class="w-2/3 mb-32 mx-auto " />
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-12 gap-y-12">
+            <div class="box md:h-96 h-auto md:p-10 p-8">
+                <div class="relative flex z-10">
+                    <div class="box flex p-3 mb-10">
+                        <i class="ph-fire-fill lg:text-6xl md:text-5xl text-4xl text-yellow-500"></i>
+                    </div>
+                </div>
+                <h6 class="md:text-4xl text-3xl font-primary font-bold text-white mb-8">Burn 6%</h6>
+                <p class="text-xl font-primary font-semibold text-gray-400">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quibusdam, quisquam.</p>
+            </div>
+            <div class="box md:h-96 h-auto md:p-10 p-8">
+                <div class="relative flex z-10">
+                    <div class="box flex p-3 mb-10">
+                        <i class="ph-storefront-fill lg:text-6xl md:text-5xl text-4xl text-yellow-500"></i>
+                    </div>
+                </div>
+                <h6 class="md:text-4xl text-3xl font-primary font-bold text-white mb-8">Marketing 4%</h6>
+                <p class="text-xl font-primary font-semibold text-gray-400">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quibusdam, quisquam.</p>
+            </div>
+            <div class="box md:h-96 h-auto md:p-10 p-8">
+                <div class="relative flex z-10">
+                    <div class="box flex p-3 mb-10">
+                        <i class="ph-gift-fill lg:text-6xl md:text-5xl text-4xl text-yellow-500"></i>
+                    </div>
+                </div>
+                <h6 class="md:text-4xl text-3xl font-primary font-bold text-white mb-8">Rewards 6%</h6>
+                <p class="text-xl font-primary font-semibold text-gray-400">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quibusdam, quisquam.</p>
+            </div>
+            <div class="box h-96"></div>
+            <div class="box h-96"></div>
+            <div class="box h-96"></div>
+        </div>
+    </section>
+
+    <!-- QUOTE-->
+
+    <section class="mt-44 mb-24 md:w-8/12 w-full px-8 mx-auto">
+        <p class="lg:text-6xl md:text-5xl text-4xl text-white font-bold font-primary text-center">Lorem ipsum dolor sit
+            amet consectetur
+            adipisicing elit.
+            Cupiditate, at!</p>
+    </section>
+
+    <!-- ROADMAP -->
+
+    <section class="mt-44 mb-24 mx-auto px-8">
+        <div class="lg:max-w-screen-xl w-full mx-auto flex md:flex-row flex-col">
+            <div class="md:w-6/12 mb-12 md:mb-0 w-full self-start md:sticky md:top-40">
+                <div class="bg-gradient-to-r from-yellow-500 w-16 h-3 rounded-md mb-12"></div>
+                <h2 class="lg:text-6xl md:text-5xl text-4xl font-primary font-bold text-white mb-8">Roadmap</h2>
+                <p class="text-lg font-primary font-semibold text-white text-gray-300">Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit.
+                    Exercitationem, in?</p>
+            </div>
+            <div class="md:w-6/12 w-full md:pl-12">
+                <div class="box h-96 mb-8">
+                    <div class="p-10 py-12">
+                        <div class="bg-gradient-to-r from-yellow-500 w-16 h-3 rounded-md mb-8"></div>
+                        <h2 class="lg:text-4xl md:text-3xl text-2xl font-primary font-bold text-white mb-8">Phase I</h2>
+                        <ul>
+                            <li class="flex items-center mb-2">
+                                <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
+                                <p class="text-lg font-semibold font-primary text-gray-400">Brainstorming Ideas</p>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
+                                <p class="text-lg font-semibold font-primary text-gray-400">Launching Website and
+                                    Socials media</p>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
+                                <p class="text-lg font-semibold font-primary text-gray-400">Building the Marketplace</p>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
+                                <p class="text-lg font-semibold font-primary text-gray-400">Building the Marketplace</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box h-96 mb-8"></div>
+                <div class="box h-96 mb-8"></div>
+                <div class="box h-96 mb-8"></div>
+                <div class="box h-96 mb-8"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MARKETPLACE -->
+    <section class="mt-44 mb-24 px-8">
+        <div class="lg:max-w-screen-xl w-full mx-auto">
+            <div class="flex md:flex-row flex-col">
+                <div id="nft_container" class="lg:w-1/2 w-full relative md:mr-20 mb-12 md:mb-0 rounded-xl">
+                    <img src="./assets/nft2.png" class="nft w-full h-auto rounded-xl" alt="">
+                    <img src="./assets/nft4.png" class="nft w-full h-auto rounded-xl" alt="">
+                    <img src="./assets/nft5.png" class="nft w-full h-auto rounded-xl" alt="">
+                    <img src="./assets/nft6.png" class="nft w-full h-auto rounded-xl" alt="">
+                    <img src="./assets/nft9.png" class="nft w-full h-auto rounded-xl" alt="">
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <div class="bg-gradient-to-r from-yellow-500 w-16 h-3 rounded-md mb-12"></div>
+                    <h2 class="lg:text-6xl md:text-5xl text-4xl font-primary font-bold text-white mb-8">Marketplace</h2>
+                    <p class="text-lg font-semibold font-primary text-gray-300 leading-loose mb-8">Lorem ipsum dolor sit
+                        amet
+                        consectetur
+                        adipisicing elit.
+                        Blanditiis iusto aperiam fuga unde est
+                        reiciendis temporibus libero, architecto veniam voluptatem natus eum suscipit eaque.
+                        Explicabo,uatur
+                        corrupti ullam
+                        repellendus, eveniet dolor voluptate? Ea architecto fuga nesciunt excepturi explicabo
+                        temporibus!
+                    </p>
+                    <button class="font-primary primary-button px-4 py-3 rounded-lg font-bold ">Go to
+                        marketplace</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-44 mb-24 px-8">
+        <div class="lg:max-w-screen-lg w-full mx-auto">
+            <div class="w-2/3 mx-auto flex flex-col justify-center items-center">
+                <div class="box p-6 mb-12">
+                    <i class="ph-telegram-logo-fill text-7xl text-white"></i>
+                </div>
+                <p class="text-white font-bold font-primary text-5xl mb-12 text-center">Want to be a part of our
+                    community?
+                    <span class="text-yellow-500">Join us on telegram</span>
+                </p>
+                <button class="font-primary primary-button px-8 py-2.5 rounded-lg font-semibold ">Join Us</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer w-full h-96 mt-44 px-8">
+
+    </footer>
+
+
+    <!--BOTTOM OVERLAY GRADIANT-->
+    <div class="w-full h-40 fixed bottom-0 footer-gridiant"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
