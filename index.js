@@ -41,3 +41,21 @@ mobile_header_trigger.addEventListener("click", () => {
 mobile_header_close.addEventListener("click", () => {
   mobile_header.classList.add("hidden");
 });
+
+// FQA
+
+const phases = document.querySelectorAll(".phases");
+
+var openedPhase = null;
+
+Array.from(phases).forEach((phase) => {
+  phase.addEventListener("click", (e) => {
+    const phaseContent = e.target.querySelector(".content");
+    phaseContent.classList.toggle("hidden");
+    if (openedPhase !== null && openedPhase !== e.target) {
+      const openedPhaseContent = openedPhase.querySelector(".content");
+      openedPhaseContent.classList.add("hidden");
+    }
+    openedPhase = e.target;
+  });
+});
