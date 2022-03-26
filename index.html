@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <title>Antiqua</title>
 </head>
 
@@ -19,39 +20,39 @@
             class="xl:max-w-screen-2xl lg:max-w-screen-xl w-full mx-auto flex items-center justify-between lg:h-20 shadow-md md:h-24 h-20 px-8">
             <div class="hidden flex-1 lg:block">
                 <ul class="flex items-center text-white">
-                    <li>
+                    <li class="link">
                         <a href="" class="font-primary font-bold mr-5 hover:text-yellow-500 cursor-pointer">Vision</a>
                     </li>
-                    <li>
+                    <li class="link">
                         <a href=""
                             class="font-primary font-bold mr-5 hover:text-yellow-500 cursor-pointer">Tokenomics</a>
                     </li>
-                    <li>
+                    <li class="link">
                         <a href="" class="font-primary font-bold mr-5 hover:text-yellow-500 cursor-pointer">Roadmap</a>
                     </li>
-                    <li>
+                    <li class="link">
                         <a href="" class="font-primary font-bold hover:text-yellow-500 cursor-pointer">Marketplace</a>
                     </li>
                 </ul>
             </div>
             <div class="grow-0">
-                <img src="./assets/logo.png" alt="" class="lg:w-32 w-28 h-auto">
+                <img src="./assets/logo.png" alt="" class="logo lg:w-32 w-28 h-auto">
             </div>
             <div class="hidden flex-1 lg:flex justify-end items-center">
                 <div class="flex items-center text-white mr-6">
-                    <div class="flex items-center p-1 rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
+                    <div class="socialLink flex items-center p-1 rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
                         <i class="ph-instagram-logo-fill text-2xl"></i>
                     </div>
-                    <div class="p-1 flex items-center rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
+                    <div class="socialLink p-1 flex items-center rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
                         <i class="ph-twitter-logo-fill text-2xl"></i>
                     </div>
-                    <div class="p-1 flex items-center rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
+                    <div class="socialLink p-1 flex items-center rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
                         <i class="ph-telegram-logo-fill text-2xl"></i>
                     </div>
                 </div>
                 <div>
                     <button
-                        class="font-primary primary-button px-4 py-2.5 rounded-lg font-semibold ">Marketplace</button>
+                        class="socialLink font-primary primary-button px-4 py-2.5 rounded-lg font-semibold ">Marketplace</button>
                 </div>
             </div>
             <div class="md:hidden block">
@@ -99,20 +100,22 @@
 
     <!-- FIRST SECTION -->
     <section class="w-full h-screen flex flex-col items-center justify-center bg-black px-8">
-        <div class="lg:max-w-screen-md md:max-w-screen-sm mx-auto w-full mb-10 mt-20">
+        <div class="landing-header lg:max-w-screen-md md:max-w-screen-sm mx-auto w-full mb-10 mt-20">
             <h3 class="xl:text-7xl lg:text-6xl md:text-5xl text-4xl font-bold font-primary mb-8 text-white text-center">
                 Unlock the
                 ancient world Where
                 Ancient art
                 meets modern
                 technology.</h3>
-            <p class="lg:text-xl text-lg font-light font-primary text-yellow-100 mb-8 text-center">A unique platform for
+            <p class="landing-subheader lg:text-xl text-lg font-light font-primary text-yellow-100 mb-6 text-center">A
+                unique platform for
                 nft
                 collectors and nft enthusiasts, you can collect and exchange your nft on this
                 awesome marketplace.
             </p>
         </div>
-        <button class="text-lg font-primary primary-button px-8 py-2.5 rounded-lg font-semibold ">Join Presale</button>
+        <button class="landing-button text-lg font-primary primary-button px-8 py-2.5 rounded-lg font-semibold ">Join
+            Presale</button>
     </section>
 
     <section class="w-full h-96 bg-gradient-to-t from-yellow-800 relative rounded-b-3xl z-50"></section>
@@ -654,6 +657,7 @@
     <div class="w-full h-40 fixed bottom-0 footer-gridiant z-40"></div>
 
     <script src="index.js"></script>
+
 </body>
 
 </html>

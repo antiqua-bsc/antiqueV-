@@ -59,3 +59,18 @@ Array.from(phases).forEach((phase) => {
     openedPhase = e.target;
   });
 });
+
+// Animations
+
+const c = document.querySelectorAll(".link");
+console.log(c);
+
+var t1 = new TimelineMax();
+var t2 = new TimelineMax();
+var t3 = new TimelineMax();
+var t4 = new TimelineMax();
+
+t1.from(".link", 1.5, { opacity: 0, y: 20 });
+t2.from(".socialLink", 1.5, { opacity: 0, y: 20 });
+t3.from(".landing-header", 1.7, { opacity: 0, y: 40 });
+t3.from(".landing-button", 0.5, { opacity: 0, scale: 0 });
