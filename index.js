@@ -70,7 +70,8 @@ var t2 = new TimelineMax();
 var t3 = new TimelineMax();
 var t4 = new TimelineMax();
 
-t1.from(".link", 1.5, { opacity: 0, y: 20 });
-t2.from(".socialLink", 1.5, { opacity: 0, y: 20 });
+t1.staggerFrom(".link", 1.5, { opacity: 0, y: 20 }, 0.1);
+t2.staggerFrom(".socialLink", 1.5, { opacity: 0, y: 20 }, 0.1);
+t4.from(".marketplaceButton", 1.5, { opacity: 0, y: 20 });
 t3.from(".landing-header", 1.7, { opacity: 0, y: 40 });
-t3.from(".landing-button", 0.5, { opacity: 0, scale: 0 });
+t3.from(".landing-button", 1, { opacity: 0, y: 60 }, "-=1");
