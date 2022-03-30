@@ -44,7 +44,7 @@ mobile_header_close.addEventListener("click", () => {
 
 // FQA
 
-const phases = document.querySelectorAll(".phases");
+const phases = document.querySelectorAll(".question");
 
 var openedPhase = null;
 
