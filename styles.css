@@ -100,3 +100,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(85, 85, 85, 0);
 }
+
+.video {
+  border-radius: 45px;
+  padding: 5px;
+}

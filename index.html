@@ -20,7 +20,7 @@
     <!-- THIS IS HEADER -->
     <header class="fixed top-0 w-full bg-black z-50">
         <div
-            class="xl:max-w-screen-2xl lg:max-w-screen-xl w-full mx-auto flex items-center justify-between lg:h-20 shadow-md md:h-24 h-20 px-8">
+            class="xl:max-w-screen-2xl lg:max-w-screen-xl w-full mx-auto flex items-center justify-between lg:h-20 shadow-md md:h-24 h-20 md:px-8 px-4">
             <div class="hidden flex-1 lg:block">
                 <ul class="flex items-center text-white">
                     <li class="link">
@@ -34,7 +34,8 @@
                         <a href="" class="font-primary font-bold mr-5 hover:text-yellow-500 cursor-pointer">Roadmap</a>
                     </li>
                     <li class="link">
-                        <a href="" class="font-primary font-bold hover:text-yellow-500 cursor-pointer">Marketplace</a>
+                        <a href="./assets/Antiqua_Whitepaper.pdf" target="_blank" download
+                            class="font-primary font-bold hover:text-yellow-500 cursor-pointer">Whitepaper</a>
                     </li>
                 </ul>
             </div>
@@ -44,13 +45,19 @@
             <div class="hidden flex-1 lg:flex justify-end items-center">
                 <div class="flex items-center text-white mr-6">
                     <div class="socialLink flex items-center p-1 rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
-                        <i class="ph-instagram-logo-fill text-2xl"></i>
+                        <a href="https://www.instagram.com/antiqua_bsc/" target="_">
+                            <i class="ph-instagram-logo-fill text-2xl"></i>
+                        </a>
                     </div>
                     <div class="socialLink p-1 flex items-center rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
-                        <i class="ph-twitter-logo-fill text-2xl"></i>
+                        <a href="https://twitter.com/AntiquaBsc" target="_">
+                            <i class="ph-twitter-logo-fill text-2xl"></i>
+                        </a>
                     </div>
                     <div class="socialLink p-1 flex items-center rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
-                        <i class="ph-telegram-logo-fill text-2xl"></i>
+                        <a href="https://t.me/Antiqua_Bsc" target="_">
+                            <i class="ph-telegram-logo-fill text-2xl"></i>
+                        </a>
                     </div>
                 </div>
                 <div>
@@ -60,7 +67,7 @@
             </div>
             <div class="md:hidden block mobile-nav-trigger">
                 <div id="mobile_header_trigger" class="p-1 rounded-lg">
-                    <i class="ph-list-bold text-3xl text-white"></i>
+                    <i class="ph-list-bold text-4xl text-white"></i>
                 </div>
             </div>
         </div>
@@ -68,11 +75,12 @@
 
     <!-- MOBILE HEADER -->
 
-    <header id="mobile_header" class="hidden w-screen h-screen fixed flex flex-col top-0 left-0 bg-black px-8 z-50">
+    <header id="mobile_header"
+        class="hidden w-screen h-screen fixed flex flex-col top-0 left-0 bg-black md:px-8 px-6 z-50">
         <div class="flex items-center justify-between h-20">
             <img src="./assets/logo.png" alt="" class="w-28 h-auto">
             <div id="mobile_header_close">
-                <i class="ph-x-bold text-3xl text-white"></i>
+                <i class="ph-x-bold text-4xl text-white"></i>
             </div>
         </div>
         <div class="flex-grow flex items-center">
@@ -85,14 +93,20 @@
                 </ul>
                 <div class="flex items-center text-white mr-6 my-20">
                     <div class="box flex items-center p-1.5 rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
-                        <i class="ph-instagram-logo-fill text-2xl"></i>
+                        <a href="https://www.instagram.com/antiqua_bsc/" target="_">
+                            <i class="ph-instagram-logo-fill text-2xl"></i>
+                        </a>
                     </div>
                     <div class="box p-1.5 flex items-center rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
-                        <i class="ph-twitter-logo-fill text-2xl"></i>
+                        <a href="https://twitter.com/AntiquaBsc" target="_">
+                            <i class="ph-twitter-logo-fill text-2xl"></i>
+                        </a>
                     </div>
                     <div
                         class="box rounded-xl p-1.5 flex items-center rounded-xl hover:bg-gray-800 mr-3 cursor-pointer">
-                        <i class="ph-telegram-logo-fill text-2xl"></i>
+                        <a href="https://t.me/Antiqua_Bsc" target="_">
+                            <i class="ph-telegram-logo-fill text-2xl"></i>
+                        </a>
                     </div>
                 </div>
                 <button
@@ -102,7 +116,7 @@
     </header>
 
     <!-- FIRST SECTION -->
-    <section class="w-full h-screen flex flex-col items-center justify-center bg-black px-8">
+    <section class="w-full h-screen flex flex-col items-center justify-center bg-black md:px-8 px-6">
         <div class="landing-header lg:max-w-screen-md md:max-w-screen-sm mx-auto w-full mb-10 mt-20">
             <h3 class="xl:text-7xl lg:text-6xl md:text-5xl text-4xl font-bold font-primary mb-8 text-white text-center">
                 Unlock the
@@ -122,9 +136,9 @@
     </section>
 
     <!-- SECOND SECTION -->
-    <section class="textSection w-full bg-black py-24 mt-24 px-8">
+    <section class="textSection w-full bg-black md:py-48 pt-24 md:px-8 px-4">
         <div class="lg:max-w-screen-lg mx-auto">
-            <p class="lg:text-7xl md:text-6xl text-4xl font-bold font-primary text-center text-white">
+            <p class="lg:text-7xl md:text-6xl text-3xl font-bold font-primary text-center text-white">
                 <span class="text-y">Antiqua </span>
                 <span class="text-y">will </span>
                 <span class="text-y">provide </span>
@@ -150,35 +164,56 @@
         </div>
     </section>
 
+    <section class="md:pt-38 pt-32 md:px-8 px-4">
+        <div class="lg:max-w-screen-xl w-full mx-auto flex md:flex-row flex-col">
+            <div class="box md:w-1/2 w-full md:mb-0 mb-16">
+                <iframe class="w-full h-96 video" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+            </div>
+            <div class="md:w-1/2 w-full flex items-center md:pl-12 pl-0">
+                <div class="flex">
+                    <span class="text-6xl text-yellow-500 self-start mr-2">"</span>
+                    <p class="text-center md:text-3xl text-lg text-white font-primary font-bold"> ipsum dolor sit amet
+                        consectetur adipisicing
+                        elit.
+                        Natus
+                        quae magnam doloremque ea quibusdam
+                        cupiditate laborum provident nesciunt ipsam! At.</p>
+                    <span class="text-6xl text-yellow-500 self-end ml-2">"</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
     <!-- PARTNERS -->
-    <section class="third md:pt-32 pt-20 px-8">
+    <section class="third md:pt-32 pt-28 md:px-8 px-4">
         <div class="features-box">
-            <div class="lg:max-w-screen-xl w-full mx-auto md:p-12 p-8">
+            <div class="lg:max-w-screen-xl w-full mx-auto md:p-12">
                 <h4
-                    class="features-heading lg:text-6xl md:text-4xl text-3xl font-primary font-bold text-white mb-16 text-center">
+                    class="features-heading lg:text-6xl md:text-4xl text-2xl font-primary font-bold text-white mb-16 text-center">
                     FEATURED BY
                 </h4>
-                <div class="flex justify-center items-center">
-                    <div class="features z-10 place-self-center mr-8">
-                        <div class="box lg:p-8 p-4">
-                            <img src="./assets/coinmarketcap.png" class="w-20" alt="">
+                <div class="md:flex grid grid-cols-2 grid-rows-2 gap-4 md:justify-center md:items-center">
+                    <div class="features z-10 place-self-center md:mr-8">
+                        <div class="box p-8">
+                            <img src="./assets/coinmarketcap.png" class="md:w-20 w-full" alt="">
                         </div>
                     </div>
-                    <div class="features z-10 place-self-center mr-8">
-                        <div class="box lg:p-8 p-4">
-                            <img src="./assets/pinksale.png" class="w-20" alt="">
+                    <div class="features z-10 place-self-center md:mr-8">
+                        <div class="box p-8">
+                            <img src="./assets/pinksale.png" class="md:w-20 w-full" alt="">
                         </div>
                     </div>
-                    <div class="features z-10 place-self-center mr-8">
-                        <div class="box lg:p-8 p-4">
-                            <img src="./assets/coingecko.png" class="w-20" alt="">
+                    <div class="features z-10 place-self-center md:mr-8">
+                        <div class="box p-8">
+                            <img src="./assets/coingecko.png" class="md:w-20 w-full" alt="">
                         </div>
                     </div>
-                    <div class="features z-10 place-self-center">
-                        <div class="box lg:p-8 p-4">
-                            <img src="./assets/binance.png" class="w-20" alt="">
+                    <div class="relative features z-10 place-self-center">
+                        <div class="box p-8">
+                            <img src="./assets/binance.png" class="md:w-20 w-full" alt="">
                         </div>
                     </div>
                 </div>
@@ -190,33 +225,40 @@
 
 
     <!-- VISION -->
-    <section class="vision md:mt-32 mt-20 w-full bg-black py-24 px-8">
+    <section class="vision w-full bg-black md:pt-48 pt-24 md:px-8 px-4">
         <div class="lg:max-w-screen-xl w-full mx-auto">
             <div class="flex md:flex-row flex-col">
                 <div class="md:w-5/12 w-full md:mb-0 mb-24">
                     <div class="vision-bar bg-gradient-to-r from-yellow-500 w-16 h-3 rounded-md mb-12"></div>
                     <h2 class="vision-heading lg:text-6xl md:text-5xl text-4xl font-primary font-bold text-white mb-8">
                         Our Vision</h2>
-                    <p class="vision-subheading text-xl font-primary font-semibold text-white text-gray-300">An
+                    <p
+                        class="vision-subheading md:text-xl text-base font-primary font-semibold text-white text-gray-300">
+                        An
                         easy-to-understand
                         overview of the important events our projects will achieve.</p>
                 </div>
                 <div class="md:w-7/12 md:pl-12 w-full">
-                    <p class="vision-paragraph text-lg font-semibold font-primary text-gray-300 leading-loose mb-8">Art
+                    <p
+                        class="vision-paragraph md:text-lg text-sm font-semibold font-primary text-gray-300 leading-loose mb-8">
+                        Art
                         is everywhere and
                         always has been. It lines the walls of museums, buildings, and caves. It fills our halls and
                         ears with sound and music. It captures the eye with beautiful movement and imagery. Art doesn’t
                         just express our passions and history; it defines, influences, and shapes culture and
                         civilization.
                     </p>
-                    <p class="vision-paragraph text-lg font-semibold font-primary text-gray-300 leading-loose mb-8">The
+                    <p
+                        class="vision-paragraph md:text-lg text-sm font-semibold font-primary text-gray-300 leading-loose mb-8">
+                        The
                         ancient world
                         left an
                         important legacy in the form of art. As it was a primary method for communicating information.
                         The use of painting, drawing, sculpting and other forms of artistic expression were important
                         not only for recording events but also used to depict cultures, values and beliefs.
                     </p>
-                    <p class="vision-paragraph text-lg font-semibold font-primary text-gray-300 leading-loose">
+                    <p
+                        class="vision-paragraph md:text-lg text-sm font-semibold font-primary text-gray-300 leading-loose">
                         We wish to share with you our love for ancient history through unique NFTs that are inspired by
                         different historical eras, and that you can buy, sell and exchange with different users on our
                         ANTIQUA marketplace.
@@ -229,14 +271,14 @@
 
 
     <!-- TOKENOMICS -->
-    <section class="tokenomics mt-44 mb-24 lg:max-w-screen-xl w-full mx-auto px-8 mx-auto">
+    <section class="tokenomics mt-44 mb-24 lg:max-w-screen-xl w-full mx-auto md:px-8 px-5">
         <div class="mb-32">
             <h1
-                class="tokenomics-header lg:text-6xl md:text-5xl text-4xl text-white font-primary font-bold text-center mb-8">
+                class="tokenomics-header lg:text-6xl md:text-5xl text-4xl text-white font-primary font-bold text-center md:mb-8 mb-6">
                 Tokenomics
             </h1>
             <p
-                class="tokenomics-subheader md:w-8/12 w-full mx-auto text-center text-xl font-primary text-light text-gray-200">
+                class="tokenomics-subheader md:w-8/12 w-full mx-auto text-center md:text-xl text-lg font-primary text-light text-gray-200">
                 To maintain
                 the long-term value of $ANTQ token, we have a deflationary plan to take out tiny bits of the 100
                 Trillion $ANTQ token supply trought buybacks and burnout.
@@ -246,119 +288,32 @@
         <img src="./assets/circles.png" class="tokenomics-image md:w-9/12 w-full mb-32 mx-auto " />
 
         <p
-            class="tokenDistribution md:w-8/12 w-full mx-auto text-center text-3xl font-primary text-light text-gray-200 mb-24">
+            class="tokenDistribution md:w-8/12 w-full mx-auto text-center md:text-3xl text-lg font-primary text-light text-gray-200 mb-24">
             Buy/Sell slippage 14% distribued into :
 
         </p>
 
-        <div class="tax grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-8">
-            <div class="taxDistribution-box h-auto">
-                <div class="box h-auto md:p-10 p-8">
-                    <div class="relative flex z-10">
-                        <div class="box flex p-3 mb-10">
-                            <i class="ph-fire-fill lg:text-6xl md:text-5xl text-4xl text-yellow-500"></i>
-                        </div>
-                    </div>
-                    <h6 class="md:text-4xl text-3xl font-primary font-bold text-white mb-8">3% Burn </h6>
-                    <p class="text-xl font-primary font-semibold text-gray-400">3% of all $ANTQ traded are burnt. The
-                        more
-                        that is traded, the more it get into the burn wallet to grow in size reducing the circulating
-                        supply
-                        and keeping the $ANTQ token growing.
-                    </p>
-                </div>
-            </div>
-
-            <div class="taxDistribution-box h-auto">
-                <div class="box h-auto md:p-10 p-8">
-                    <div class="relative flex z-10">
-                        <div class="box flex p-3 mb-10">
-                            <i class="ph-storefront-fill lg:text-6xl md:text-5xl text-4xl text-yellow-500"></i>
-                        </div>
-                    </div>
-                    <h6 class="md:text-4xl text-3xl font-primary font-bold text-white mb-8">3% Marketing</h6>
-                    <p class="text-xl font-primary font-semibold text-gray-400">3% of each transaction will be sent to
-                        the
-                        marketing wallet which will help the team with sustaining organic growth and hype for the
-                        project.
-                    </p>
-                </div>
-            </div>
-            <div class="taxDistribution-box h-auto">
-                <div class="box h-auto md:p-10 p-8">
-                    <div class="relative flex z-10">
-                        <div class="box flex p-3 mb-10">
-                            <i class="ph-gift-fill lg:text-6xl md:text-5xl text-4xl text-yellow-500"></i>
-                        </div>
-                    </div>
-                    <h6 class="md:text-4xl text-3xl font-primary font-bold text-white mb-8">3% Rewards</h6>
-                    <p class="text-xl font-primary font-semibold text-gray-400">3% of each transaction is redistributed
-                        automatically to $ANTQ token holders with $XRP.</p>
-                </div>
-            </div>
-            <div class="taxDistribution-box h-auto">
-                <div class="box h-auto md:p-10 p-8">
-                    <div class="relative flex z-10">
-                        <div class="box flex p-3 mb-10">
-                            <i class="ph-shopping-cart-fill lg:text-6xl md:text-5xl text-4xl text-yellow-500"></i>
-                        </div>
-                    </div>
-                    <h6 class="md:text-4xl text-3xl font-primary font-bold text-white mb-8">2% Buyback</h6>
-                    <p class="text-xl font-primary font-semibold text-gray-400">2% of each transaction will be
-                        automatically
-                        made a Buyback to make sure the token has stable growth in order to create a rising price floor
-                        and
-                        stability
-                    </p>
-                </div>
-            </div>
-            <div class="taxDistribution-box h-auto">
-                <div class="box h-auto md:p-10 p-8">
-                    <div class="relative flex z-10">
-                        <div class="box flex p-3 mb-10">
-                            <i class="ph-code-fill lg:text-6xl md:text-5xl text-4xl text-yellow-500"></i>
-                        </div>
-                    </div>
-                    <h6 class="md:text-4xl text-3xl font-primary font-bold text-white mb-8">2% Development</h6>
-                    <p class="text-xl font-primary font-semibold text-gray-400">3% of each transaction will be used for
-                        the
-                        whole development of the project exclusevily the Marketplace
-                    </p>
-                </div>
-            </div>
-            <div class="taxDistribution-box">
-                <div class="box h-auto md:p-10 p-8">
-                    <div class="relative flex z-10">
-                        <div class="box flex p-3 mb-10">
-                            <i class="ph-coins-light lg:text-6xl md:text-5xl text-4xl text-yellow-500"></i>
-                        </div>
-                    </div>
-                    <h6 class="md:text-4xl text-3xl font-primary font-bold text-white mb-8">1% Charity</h6>
-                    <p class="text-xl font-primary font-semibold text-gray-400">1% of each transaction will be sent to
-                        the
-                        church as donations.
-                    </p>
-                </div>
-            </div>
+        <div id="tokenomics" class="tax grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-8">
         </div>
     </section>
 
     <!-- QUOTE-->
 
-    <section class="quote mt-44 mb-24 md:w-8/12 w-full px-8 mx-auto">
-        <p class="quote-paragraph lg:text-6xl md:text-5xl text-4xl text-white font-bold font-primary text-center">
+    <section class="quote lg:pt-44 pt-28 mb-24 md:w-8/12 w-full md:px-8 px-5 mx-auto">
+        <p class="quote-paragraph lg:text-6xl md:text-5xl text-3xl text-white font-bold font-primary text-center">
         </p>
     </section>
 
     <!-- ROADMAP -->
 
-    <section class="roadmap mt-44 mb-24 mx-auto px-8">
+    <section class="roadmap mt-44 mb-24 mx-auto md:px-8 px-5">
         <div class="lg:max-w-screen-xl w-full mx-auto flex md:flex-row flex-col">
             <div class="md:w-6/12 mb-12 md:mb-0 w-full self-start md:sticky md:top-40">
                 <div class="roadmap-bar bg-gradient-to-r from-yellow-500 w-16 h-3 rounded-md mb-12"></div>
                 <h2 class="roadmap-heading lg:text-6xl md:text-5xl text-4xl font-primary font-bold text-white mb-8">
                     Roadmap</h2>
-                <p class="roadmap-subheading text-lg font-primary font-semibold text-white text-gray-300">That outlines
+                <p class="roadmap-subheading md:text-lg text-base font-primary font-semibold text-white text-gray-300">
+                    That outlines
                     the directions our
                     project will take to achieve successful long-term strategic goals.
                     roadmap</p>
@@ -366,34 +321,39 @@
             <div class="md:w-6/12 w-full md:pl-12">
                 <div class="phase">
                     <div class="box mb-8">
-                        <div class="md:px-10 md:py-12 p-8">
+                        <div class="md:px-10 md:py-16 px-5 py-8 p-8">
                             <div class="bg-gradient-to-r from-yellow-500 w-16 h-3 rounded-md mb-8"></div>
                             <h2 class="lg:text-4xl md:text-3xl text-2xl font-primary font-bold text-white mb-8">Phase I
                             </h2>
                             <ul>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Conceptualizing and
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">
+                                        Conceptualizing and
                                         brainstorming Ideas</p>
                                 </li>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Release of Whitepaper
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">Release of
+                                        Whitepaper
                                     </p>
                                 </li>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Constructing Website and
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">
+                                        Constructing Website and
                                         Social Media</p>
                                 </li>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Designing Firsts ancient
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">Designing
+                                        Firsts ancient
                                         civilization collections of NFT’s</p>
                                 </li>
                                 <li class="flex items-center">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Starting the first wave
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">Starting
+                                        the first wave
                                         of
                                         marketing</p>
                                 </li>
@@ -403,35 +363,40 @@
                 </div>
                 <div class="phase">
                     <div class="box mb-8">
-                        <div class="md:px-10 md:py-12 p-8">
+                        <div class="md:px-10 md:py-16 px-5 py-8 p-8">
                             <div class="bg-gradient-to-r from-yellow-500 w-16 h-3 rounded-md mb-8"></div>
                             <h2 class="lg:text-4xl md:text-3xl text-2xl font-primary font-bold text-white mb-8">Phase II
                             </h2>
                             <ul>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Start building the
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">Start
+                                        building the
                                         marketplace</p>
                                 </li>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Smart Contract
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">Smart
+                                        Contract
                                         Development
                                     </p>
                                 </li>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Interfi Audit</p>
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">Interfi
+                                        Audit</p>
                                 </li>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Launch the demo version
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">Launch the
+                                        demo version
                                         of
                                         the Marketplace</p>
                                 </li>
                                 <li class="flex items-center">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Second marketing wave
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">Second
+                                        marketing wave
                                     </p>
                                 </li>
                             </ul>
@@ -440,7 +405,7 @@
                 </div>
                 <div class="phase">
                     <div class="box mb-8">
-                        <div class="md:px-10 md:py-12 p-8">
+                        <div class="md:px-10 md:py-16 px-6 py-10 p-8">
                             <div class="bg-gradient-to-r from-yellow-500 w-16 h-3 rounded-md mb-8"></div>
                             <h2 class="lg:text-4xl md:text-3xl text-2xl font-primary font-bold text-white mb-8">Phase
                                 III
@@ -448,41 +413,45 @@
                             <ul>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Airdrop 200 nft of each
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">Airdrop 200
+                                        nft of each
                                         collection to giveaways winners</p>
                                 </li>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">List Presale On Pinksale
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">List
+                                        Presale On Pinksale
                                     </p>
                                 </li>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Massive marketing wave
-                                    </p>
-                                </li>
-                                <li class="flex items-center mb-3">
-                                    <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Launch on Pancakeswap
-                                    </p>
-                                </li>
-                                <li class="flex items-center mb-3">
-                                    <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Listing $ANTQ on
-                                        coinmarketcap and coingecko </p>
-                                </li>
-                                <li class="flex items-center mb-3">
-                                    <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">List the 3 first Antiqua
-                                        NFT
-                                        collections at AIRNFT NFT marketplace & The eBay of the blockchain world.
-                                        (Treasureland)</p>
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">Massive
+                                        marketing wave</p>
                                 </li>
                                 <li class="flex items-center">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Mint phase of the 2400
-                                        nft
-                                        left from the 3 Antiqua NFT collection </p>
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">
+                                        Launch on Pancakeswap
+                                    </p>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">
+                                        Listing $ANTQ on coinmarketcap and coingecko
+                                    </p>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">
+                                        List the 3 first Antiqua NFT collections at AIRNFT NFT marketplace & The eBay of
+                                        the blockchain world.(Treasureland)
+                                    </p>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">
+                                        Mint phase of the 2400 nft left from the 3 Antiqua NFT collection
+                                    </p>
                                 </li>
                             </ul>
                         </div>
@@ -490,7 +459,7 @@
                 </div>
                 <div class="phase">
                     <div class="box mb-8">
-                        <div class="md:px-10 md:py-12 p-8">
+                        <div class="md:px-10 md:py-16 px-6 py-10 p-8">
                             <div class="bg-gradient-to-r from-yellow-500 w-16 h-3 rounded-md mb-8"></div>
                             <h2 class="lg:text-4xl md:text-3xl text-2xl font-primary font-bold text-white mb-8">Phase
                                 IV
@@ -498,25 +467,29 @@
                             <ul>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Long term parternship
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">Long term
+                                        parternship
                                         with
                                         worldwide known influencers.</p>
                                 </li>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Deployment of the full
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">Deployment
+                                        of the full
                                         functional marketplace version.
                                     </p>
                                 </li>
                                 <li class="flex items-center mb-3">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Inviting the bigest bsc
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">Inviting
+                                        the bigest bsc
                                         Nft
                                         project to join Antiqua marketplace</p>
                                 </li>
                                 <li class="flex items-center">
                                     <i class="ph-circle-fill text-yellow-500 text-xs mr-3"></i>
-                                    <p class="text-lg font-semibold font-primary text-gray-400">Collaboration with
+                                    <p class="md:text-lg text-base font-semibold font-primary text-gray-400">
+                                        Collaboration with
                                         famous
                                         successful project on the NFT Ecosystem.
                                     </p>
@@ -531,7 +504,7 @@
 
 
     <!-- MARKETPLACE -->
-    <section class="marketplace mt-44 mb-24 px-8">
+    <section class="marketplace mt-44 mb-24 md:px-8 px-5">
         <div class="lg:max-w-screen-xl w-full mx-auto">
             <div class="flex md:flex-row flex-col">
                 <div id="nft_container"
@@ -574,89 +547,22 @@
                     questions from the community. Which will help you to understand simply. For more you can contact us.
                 </p>
             </div>
-            <div class="md:w-6/12 w-full md:pl-12">
-                <div>
-                    <div class="z-10 border-black mb-5 question">
-                        <div class="flex box items-center justify-between w-full pointer-events-none py-5 px-6">
-                            <p class="text-xl font-primary text-white font-medium">What is an NFT?</p>
-                            <i class="ph-plus-bold text-xl text-white"></i>
-                        </div>
-                        <div class="hidden box mt-3 content py-4 px-6 py-6">
-                            <p class="text-lg font-primary font-semibold text-gray-400">An NFT, or a non-fungible token,
-                                is data that represents something specific that is stored or accounted for in a digital
-                                ledger. An NFT can, for example, represent a piece of art, a music album, or other types
-                                of digital files.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="z-10 border-black mb-5 question">
-                        <div class="flex box items-center justify-between w-full pointer-events-none py-5 px-6">
-                            <p class="text-xl font-primary text-white font-medium">How is Antiqua created?</p>
-                            <i class="ph-plus-bold text-xl text-white"></i>
-                        </div>
-                        <div class="hidden box mt-3 content py-4 px-6 py-6">
-                            <p class="text-lg font-primary font-semibold text-gray-400">Antiqua is a collection of
-                                digital art that is made to bring smiles to collectors. Combined with the ancient
-                                civilization legacy, each ANTIQUA is uniquely created and carefully designed by highly
-                                experienced artists by overlaying various pre-designed attributes on the base ANTIQUA
-                                character from different eras. The process of assigning attributes is achieved through
-                                the process called “minting” on the BEP20 blockchain, which randomizes the overlaying
-                                process using the pre-ascribed probabilities of each attribute. Once minted, each
-                                Antiqua becomes a unique NFT and will be transferred to your designated crypto-wallet.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="z-10 border-black mb-5 question">
-                        <div class="flex box items-center justify-between w-full pointer-events-none py-5 px-6">
-                            <p class="text-xl font-primary text-white font-medium">How many ANTIQUA are there?</p>
-                            <i class="ph-plus-bold text-xl text-white"></i>
-                        </div>
-                        <div class="hidden box mt-3 content py-4 px-6 py-6">
-                            <p class="text-lg font-primary font-semibold text-gray-400">
-                                There is a strictly limited supply of ANTIQUA. There will only ever be 3000 origins
-                                Antiqua made available and each of them will be unique from the next.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="z-10 border-black mb-5 question">
-                        <div class="flex box items-center justify-between w-full pointer-events-none py-5 px-6">
-                            <p class="text-xl font-primary text-white font-medium">How do I own an ANTIQUA nft?</p>
-                            <i class="ph-plus-bold text-xl text-white"></i>
-                        </div>
-                        <div class="hidden box mt-3 content py-4 px-6 py-6">
-                            <p class="text-lg font-primary font-semibold text-gray-400">
-                                ANTIQUA can be minted on the “Mint” tab on our webpage that will be available after we
-                                fill the presale Simply connect a compatible crypto-wallet with the requisite mint fees.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="z-10 border-black mb-5 question">
-                        <div class="flex box items-center justify-between w-full pointer-events-none py-5 px-6">
-                            <p class="text-xl font-primary text-white font-medium">How are the ranks of each Antiqua
-                                calculated?</p>
-                            <i class="ph-plus-bold text-xl text-white"></i>
-                        </div>
-                        <div class="hidden box mt-3 content py-4 px-6 py-6">
-                            <p class="text-lg font-primary font-semibold text-gray-400">
-                                Antiqua nft ranks are calculated by the product of all the probabilities of their
-                                features. The Antiqua with the lowest probability has the 1st rank.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div id="fqaQuestions" class="md:w-6/12 w-full md:pl-12">
             </div>
         </div>
     </section>
 
     <section class="telegram mt-44 mb-24 px-8">
         <div class="lg:max-w-screen-lg w-full mx-auto">
-            <div class="w-2/3 mx-auto flex flex-col justify-center items-center">
+            <div class="md:w-2/3 w-full mx-auto flex flex-col justify-center items-center">
                 <div class="telegram-logo">
                     <div class="box p-6 mb-12">
                         <i class="ph-telegram-logo-fill text-7xl text-white"></i>
                     </div>
                 </div>
-                <p class="telegram-heading text-white font-bold font-primary text-5xl mb-12 text-center">Want to be a
+                <p
+                    class="telegram-heading text-white font-bold font-primary lg:text-5xl md:text-4xl text-3xl mb-12 text-center">
+                    Want to be a
                     part of our
                     community?
                     <span class="text-yellow-500">Join us on telegram</span>

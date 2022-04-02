@@ -42,24 +42,6 @@ mobile_header_close.addEventListener("click", () => {
   mobile_header.classList.add("hidden");
 });
 
-// FQA
-
-const phases = document.querySelectorAll(".question");
-
-var openedPhase = null;
-
-Array.from(phases).forEach((phase) => {
-  phase.addEventListener("click", (e) => {
-    const phaseContent = e.target.querySelector(".content");
-    phaseContent.classList.toggle("hidden");
-    if (openedPhase !== null && openedPhase !== e.target) {
-      const openedPhaseContent = openedPhase.querySelector(".content");
-      openedPhaseContent.classList.add("hidden");
-    }
-    openedPhase = e.target;
-  });
-});
-
 const quoteParagraph = document.querySelector(".quote-paragraph");
 var quoteParagraphStringArray =
   "At Antiqua, we are revolutionizing the world of digital artwork. With the help of blockchain technology, we have created thefirst marketplace where users can buy, sell and exchange their NFTs.";
@@ -285,3 +267,122 @@ var telegramScene = new ScrollMagic.Scene({
   // })
   .setTween(telegram)
   .addTo(controller);
+
+// Tokenomics
+
+const tokenomicsData = [
+  {
+    name: "3% Burn",
+    discription:
+      "3% of all $ANTQ traded are burnt. The more that is traded, the more it get into the burn wallet to grow in size reducing the circulating supply and keeping the $ANTQ token growing.",
+    iconName: "fire",
+  },
+  {
+    name: "3% Marketing",
+    discription:
+      "3% of each transaction will be sent to the marketing wallet which will help the team with sustaining organic growth and hype for the project.",
+    iconName: "storefront",
+  },
+  {
+    name: "3% Rewards",
+    discription:
+      "3% of each transaction is redistributed automatically to $ANTQ token holders with $XRP.",
+    iconName: "gift",
+  },
+  {
+    name: "2% Buyback",
+    discription:
+      "2% of each transaction will be automatically made a Buyback to make sure the token has stable growth in order to create a rising price floor and stability",
+    iconName: "shopping-cart",
+  },
+  {
+    name: "2% Development",
+    discription:
+      "2% of each transaction will be used for the whole development of the project exclusevily the Marketplace",
+    iconName: "code",
+  },
+  {
+    name: "1% Charity",
+    discription:
+      "1% of each transaction will be sent to the church as donations.",
+    iconName: "coins",
+  },
+];
+
+const tokenomicsElement = document.querySelector("#tokenomics");
+
+for (var token of tokenomicsData) {
+  tokenomicsElement.innerHTML += `<div class="taxDistribution-box h-auto">
+  <div class="box h-auto md:p-10 px-5 py-8">
+      <div class="relative flex z-10">
+          <div class="box flex p-3 md:mb-10 mb-8">
+              <i class="ph-${token.iconName}-fill lg:text-6xl md:text-5xl text-4xl text-yellow-500"></i>
+          </div>
+      </div>
+      <h6 class="md:text-4xl text-2xl font-primary font-bold text-white md:mb-8 mb-6">${token.name}</h6>
+      <p class="md:text-xl text-sm font-primary font-semibold text-gray-400">${token.discription}</p>
+  </div>
+</div>`;
+}
+
+const fqaData = [
+  {
+    title: "What is an NFT?",
+    content:
+      "An NFT, or a non-fungible token,is data that represents something specific that is stored or accounted for in a digital ledger. An NFT can, for example, represent a piece of art, a music album, or other types of digital files.",
+  },
+  {
+    title: "How is Antiqua created?",
+    content:
+      "Antiqua is a collection of digital art that is made to bring smiles to collectors. Combined with the ancient civilization legacy, each ANTIQUA is uniquely created and carefully designed by highly experienced artists by overlaying various pre-designed attributes on the base ANTIQUA character from different eras. The process of assigning attributes is achieved through the process called “minting” on the BEP20 blockchain, which randomizes the overlaying process using the pre-ascribed probabilities of each attribute. Once minted, each Antiqua becomes a unique NFT and will be transferred to your designated crypto-wallet.",
+  },
+  {
+    title: "How many ANTIQUA are there?",
+    content:
+      "There is a strictly limited supply of ANTIQUA. There will only ever be 3000 origins Antiqua made available and each of them will be unique from the next.",
+  },
+  {
+    title: "How do I own an ANTIQUA nft?",
+    content:
+      "Antiqua nft ranks are calculated by the product of all the probabilities of their features. The Antiqua with the lowest probability has the 1st rank.",
+  },
+  {
+    title: "How are the ranks of each Antiqua calculated?",
+    content:
+      "ANTIQUA can be minted on the “Mint” tab on our webpage that will be available after we fill the presale Simply connect a compatible crypto-wallet with the requisite mint fees.",
+  },
+];
+
+const fqaElement = document.querySelector("#fqaQuestions");
+
+for (var fqaDataElement of fqaData) {
+  fqaElement.innerHTML += `<div class="z-10 border-black mb-5 question">
+  <div class="box md:py-10 md:px-10 py-6 px-6">
+      <div class="flex items-center justify-between w-full pointer-events-none ">
+          <p class="md:text-xl text-lg font-primary text-white font-medium">${fqaDataElement.title}</p>
+          <i class="ph-plus-bold text-xl text-white"></i>
+      </div>
+      <div class="hidden mt-3 content md:mt-12 mt-8">
+          <p class="md:text-lg text-base font-primary font-semibold text-gray-400">${fqaDataElement.content}</p>
+      </div>
+  </div>
+</div>`;
+}
+
+// FQA
+
+const phases = document.querySelectorAll(".question");
+
+var openedPhase = null;
+
+Array.from(phases).forEach((phase) => {
+  phase.addEventListener("click", (e) => {
+    const phaseContent = e.target.querySelector(".content");
+    phaseContent.classList.toggle("hidden");
+    if (openedPhase !== null && openedPhase !== e.target) {
+      const openedPhaseContent = openedPhase.querySelector(".content");
+      openedPhaseContent.classList.add("hidden");
+    }
+    openedPhase = e.target;
+  });
+});
