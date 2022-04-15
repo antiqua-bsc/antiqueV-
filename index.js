@@ -83,7 +83,7 @@ navbar
   .from(".logo", 1.5, { opacity: 0, y: 20 }, 0);
 
 text.staggerFrom(".text-y", 0.7, { opacity: 0, y: 20, scale: 0.5 }, 0.1);
-quoteTl.staggerFrom(".quote-span", 0.5, { opacity: 0, y: 20, scale: 0.5 }, 0.1);
+quoteTl.staggerFrom(".quote-span", 0.1, { opacity: 0, y: 20, scale: 0.5 }, 0.1);
 
 features.from(".features-heading", 1, { opacity: 0, y: 40 }, 0.25).staggerFrom(
   ".features",
