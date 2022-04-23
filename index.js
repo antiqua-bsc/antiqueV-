@@ -349,12 +349,12 @@ const fqaData = [
   {
     title: "How do I own an ANTIQUA nft?",
     content:
-      "Antiqua nft ranks are calculated by the product of all the probabilities of their features. The Antiqua with the lowest probability has the 1st rank.",
+      "ANTIQUA can be minted on the “Mint” tab on our webpage that will be available after we fill the presale Simply connect a compatible crypto-wallet with the requisite mint fees.",
   },
   {
     title: "How are the ranks of each Antiqua calculated?",
     content:
-      "ANTIQUA can be minted on the “Mint” tab on our webpage that will be available after we fill the presale Simply connect a compatible crypto-wallet with the requisite mint fees.",
+      "Antiqua nft ranks are calculated by the product of all the probabilities of their features. The Antiqua with the lowest probability has the 1st rank.",
   },
 ];
 
