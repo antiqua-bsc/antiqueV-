@@ -83,7 +83,12 @@ navbar
   .from(".logo", 1.5, { opacity: 0, y: 20 }, 0);
 
 text.staggerFrom(".text-y", 0.7, { opacity: 0, y: 20, scale: 0.5 }, 0.1);
-quoteTl.staggerFrom(".quote-span", 0.1, { opacity: 0, y: 20, scale: 0.5 }, 0.1);
+quoteTl.staggerFrom(
+  ".quote-span",
+  0.1,
+  { opacity: 0, y: 20, scale: 0.5 },
+  0.05
+);
 
 features.from(".features-heading", 1, { opacity: 0, y: 40 }, 0.25).staggerFrom(
   ".features",
@@ -313,7 +318,7 @@ const tokenomicsElement = document.querySelector("#tokenomics");
 
 for (var token of tokenomicsData) {
   tokenomicsElement.innerHTML += `<div class="taxDistribution-box h-auto">
-  <div class="box h-auto md:p-10 px-5 py-8">
+  <div class="box h-full md:p-10 px-5 py-8">
       <div class="relative flex z-10">
           <div class="box flex p-3 md:mb-10 mb-8">
               <i class="ph-${token.iconName}-fill lg:text-6xl md:text-5xl text-4xl text-yellow-500"></i>
@@ -384,5 +389,12 @@ Array.from(phases).forEach((phase) => {
       openedPhaseContent.classList.add("hidden");
     }
     openedPhase = e.target;
+  });
+});
+
+const mobileNavLink = document.querySelectorAll(".mobileNavLink");
+Array.from(mobileNavLink).forEach((navLink) => {
+  navLink.addEventListener("click", () => {
+    mobile_header.classList.add("hidden");
   });
 });
